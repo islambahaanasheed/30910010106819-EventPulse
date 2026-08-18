@@ -5,7 +5,8 @@ const morgan = require("morgan");
 const mongoSanitize = require("express-mongo-sanitize");
 const connectDB = require("./config/db");
 const errorHandler = require("./middleware/errorHandler");
-const authRoutes = require("./routes/authRoutes");
+const authRoutes = require("./routes/auth.routes");
+const eventRoutes = require("./routes/events.routes");
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use(mongoSanitize());
 
 app.use("/api/auth", authRoutes);
+app.use("/api/events", eventRoutes);
 
 app.get("/", (req, res) => {
     res.json({
