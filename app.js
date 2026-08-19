@@ -2,11 +2,12 @@ require("dotenv").config();
 
 const express = require("express");
 const morgan = require("morgan");
-const mongoSanitize = require("express-mongo-sanitize");
+const mongoSanitize = require("@exortek/express-mongo-sanitize");
 const connectDB = require("./config/db");
 const errorHandler = require("./middleware/errorHandler");
 const authRoutes = require("./routes/auth.routes");
 const eventRoutes = require("./routes/events.routes");
+const registrationRoutes = require("./routes/registrations.routes");
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(mongoSanitize());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/events", eventRoutes);
+app.use("/api/registrations", registrationRoutes);
 
 app.get("/", (req, res) => {
     res.json({

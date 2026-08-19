@@ -20,7 +20,7 @@ exports.register = asyncHandler(async (req, res, next) => {
     name,
     email,
     password: hashedPassword,
-    role: 'user',
+    role: 'attendee',
   });
 
   const token = jwt.sign(
