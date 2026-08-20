@@ -1,0 +1,1247 @@
+{
+  "info": {
+    "_postman_id": "0a700240-0b46-419c-af63-70a74a20b515",
+    "name": "EventPulse API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56717972",
+    "_collection_link": "https://go.postman.co/collection/56717972-0a700240-0b46-419c-af63-70a74a20b515?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"islambahhaanasheed@gmail.com\",\r\n  \"password\": \"FINALEofLVL4\",\r\n  \"name\": \"Islam\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/auth/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "auth",
+                "register"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Register",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"email\": \"islambahhaanasheed@gmail.com\",\r\n  \"password\": \"FINALEofLVL4\",\r\n  \"name\": \"Islam\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/api/auth/register",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "auth",
+                    "register"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "344"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"158-RrpXHqwoh24AwGQYn8Igwn/7bBQ\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 20 Aug 2026 19:17:53 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTg3NTJlMTZhMDZlZDlkMDcwZTgyZTkiLCJyb2xlIjoiYXR0ZW5kZWUiLCJpYXQiOjE3ODcyNTM0NzMsImV4cCI6MTc4Nzg1ODI3M30.ulitIeK3X5y-YWSODcYgjdnpFwOZP3IcxMtl222L07w\",\n    \"data\": {\n        \"id\": \"6a8752e16a06ed9d070e82e9\",\n        \"name\": \"Islam\",\n        \"email\": \"islambahhaanasheed@gmail.com\",\n        \"role\": \"attendee\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"attendee@eventpulse.com\",\r\n  \"password\": \"Attendee123!\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Login",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"email\": \"attendee@eventpulse.com\",\r\n  \"password\": \"Attendee123!\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/api/auth/login",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "auth",
+                    "login"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "231"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"e7-cMG0DyICBVpa9voiFiQba+1y4OA\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 20 Aug 2026 19:18:16 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTg1ZjJiYWU1ZjFkZjg0NmMxNmYwNmEiLCJyb2xlIjoiYXR0ZW5kZWUiLCJpYXQiOjE3ODcyNTM0OTYsImV4cCI6MTc4Nzg1ODI5Nn0.2Q3Mb_XN6_jMzSyPuv3d998q_qgBYCTiA9ip8dfIJOM\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "item": [
+        {
+          "name": "Create Event",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{supabase_service_role_api_key_0xmu}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Cairo Tech Meetup\",\r\n  \"description\": \"A meetup for developers and technology enthusiasts in Cairo.\",\r\n  \"category\": \"6a85f2b9e5f1df846c16f065\",\r\n  \"date\": \"2026-09-15T18:00:00.000Z\",\r\n  \"city\": \"Cairo\",\r\n  \"venue\": \"Cairo International Convention Centre\",\r\n  \"capacity\": 100,\r\n  \"organizer\": \"6a85f2bae5f1df846c16f069\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/events",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "events"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Create Event",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admin_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"title\": \"Alexandria Web Development Workshop\",\r\n  \"description\": \"An interactive workshop covering modern web development, APIs, and backend technologies.\",\r\n  \"category\": \"6a85f2b9e5f1df846c16f072\",\r\n  \"date\": \"2026-10-10T16:30:00.000Z\",\r\n  \"city\": \"Alexandria\",\r\n  \"venue\": \"Bibliotheca Alexandrina Conference Hall\",\r\n  \"capacity\": 75,\r\n  \"organizer\": \"6a85f2bae5f1df846c16f081\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/api/events",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "events"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "514"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"202-weHdtTWkPiu0UPap5iEHSyexDoQ\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 20 Aug 2026 19:19:50 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Event created successfully\",\n    \"data\": {\n        \"title\": \"Alexandria Web Development Workshop\",\n        \"description\": \"An interactive workshop covering modern web development, APIs, and backend technologies.\",\n        \"category\": \"6a85f2b9e5f1df846c16f072\",\n        \"date\": \"2026-10-10T16:30:00.000Z\",\n        \"city\": \"Alexandria\",\n        \"venue\": \"Bibliotheca Alexandrina Conference Hall\",\n        \"capacity\": 75,\n        \"organizer\": \"6a85f2bae5f1df846c16f081\",\n        \"_id\": \"6a8753566a06ed9d070e82ea\",\n        \"createdAt\": \"2026-08-20T19:19:50.744Z\",\n        \"updatedAt\": \"2026-08-20T19:19:50.744Z\",\n        \"__v\": 0\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update Event",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Cairo Tech weekly Meetup\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/events/:id",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "events",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "6a8753566a06ed9d070e82ea"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Update Event",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admin_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"title\": \"Cairo Tech weekly Meetup\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/api/events/:id",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "events",
+                    ":id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "6a8753566a06ed9d070e82ea"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "503"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"1f7-imCGP4NKTz0c4TR1uxmwRMv8BHg\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 20 Aug 2026 19:23:02 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Event updated successfully\",\n    \"data\": {\n        \"_id\": \"6a8753566a06ed9d070e82ea\",\n        \"title\": \"Cairo Tech weekly Meetup\",\n        \"description\": \"An interactive workshop covering modern web development, APIs, and backend technologies.\",\n        \"category\": \"6a85f2b9e5f1df846c16f072\",\n        \"date\": \"2026-10-10T16:30:00.000Z\",\n        \"city\": \"Alexandria\",\n        \"venue\": \"Bibliotheca Alexandrina Conference Hall\",\n        \"capacity\": 75,\n        \"organizer\": \"6a85f2bae5f1df846c16f081\",\n        \"createdAt\": \"2026-08-20T19:19:50.744Z\",\n        \"updatedAt\": \"2026-08-20T19:23:02.196Z\",\n        \"__v\": 0\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Event by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/events/:id",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "events",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "6a85f2bae5f1df846c16f06d"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get Event by ID",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3000/api/events/:id",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "events",
+                    ":id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "6a85f2bae5f1df846c16f06d"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "726"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"2d6-mVNK4HiLWoEkljcYr9f/I9N0aao\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 20 Aug 2026 19:30:45 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": {\n        \"_id\": \"6a85f2bae5f1df846c16f06d\",\n        \"title\": \"Live Music Night\",\n        \"description\": \"An evening featuring live performances from local musicians.\",\n        \"category\": {\n            \"_id\": \"6a85f2b9e5f1df846c16f067\",\n            \"name\": \"Music\",\n            \"description\": \"Music and entertainment events\",\n            \"__v\": 0,\n            \"createdAt\": \"2026-08-19T18:15:21.709Z\",\n            \"updatedAt\": \"2026-08-19T18:15:21.709Z\"\n        },\n        \"date\": \"2026-11-05T16:00:00.000Z\",\n        \"city\": \"Giza\",\n        \"venue\": \"Giza Cultural Center\",\n        \"capacity\": 300,\n        \"organizer\": {\n            \"_id\": \"6a85f2bae5f1df846c16f069\",\n            \"name\": \"EventPulse Admin\",\n            \"email\": \"admin@eventpulse.com\",\n            \"role\": \"admin\",\n            \"createdAt\": \"2026-08-19T18:15:22.068Z\",\n            \"updatedAt\": \"2026-08-19T18:15:22.068Z\",\n            \"__v\": 0\n        },\n        \"__v\": 0,\n        \"createdAt\": \"2026-08-19T18:15:22.246Z\",\n        \"updatedAt\": \"2026-08-19T18:15:22.246Z\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Events",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/events",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "events"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get Events",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3000/api/events",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "events"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "4146"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"1032-23+tfQ9pzlYe5a5MUiC06hPuWx0\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 20 Aug 2026 19:31:33 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"_id\": \"6a85f6140b74b263f3189cc7\",\n            \"title\": \"Cairo Tech Meetup\",\n            \"description\": \"A meetup for developers and technology enthusiasts in Cairo.\",\n            \"category\": {\n                \"_id\": \"6a85f2b9e5f1df846c16f065\",\n                \"name\": \"Technology\",\n                \"description\": \"Technology and innovation events\",\n                \"__v\": 0,\n                \"createdAt\": \"2026-08-19T18:15:21.706Z\",\n                \"updatedAt\": \"2026-08-19T18:15:21.706Z\"\n            },\n            \"date\": \"2026-09-15T18:00:00.000Z\",\n            \"city\": \"Cairo\",\n            \"venue\": \"Cairo International Convention Centre\",\n            \"capacity\": 100,\n            \"organizer\": {\n                \"_id\": \"6a85f2bae5f1df846c16f069\",\n                \"name\": \"EventPulse Admin\",\n                \"email\": \"admin@eventpulse.com\",\n                \"role\": \"admin\",\n                \"createdAt\": \"2026-08-19T18:15:22.068Z\",\n                \"updatedAt\": \"2026-08-19T18:15:22.068Z\",\n                \"__v\": 0\n            },\n            \"createdAt\": \"2026-08-19T18:29:40.095Z\",\n            \"updatedAt\": \"2026-08-19T18:29:40.095Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a8753566a06ed9d070e82ea\",\n            \"title\": \"Cairo Tech weekly Meetup\",\n            \"description\": \"An interactive workshop covering modern web development, APIs, and backend technologies.\",\n            \"category\": null,\n            \"date\": \"2026-10-10T16:30:00.000Z\",\n            \"city\": \"Alexandria\",\n            \"venue\": \"Bibliotheca Alexandrina Conference Hall\",\n            \"capacity\": 75,\n            \"organizer\": null,\n            \"createdAt\": \"2026-08-20T19:19:50.744Z\",\n            \"updatedAt\": \"2026-08-20T19:23:02.196Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a85f2bae5f1df846c16f06b\",\n            \"title\": \"Tech Innovation Summit\",\n            \"description\": \"A conference focused on modern technology and innovation.\",\n            \"category\": {\n                \"_id\": \"6a85f2b9e5f1df846c16f065\",\n                \"name\": \"Technology\",\n                \"description\": \"Technology and innovation events\",\n                \"__v\": 0,\n                \"createdAt\": \"2026-08-19T18:15:21.706Z\",\n                \"updatedAt\": \"2026-08-19T18:15:21.706Z\"\n            },\n            \"date\": \"2026-10-15T07:00:00.000Z\",\n            \"city\": \"Cairo\",\n            \"venue\": \"Cairo International Convention Centre\",\n            \"capacity\": 500,\n            \"organizer\": {\n                \"_id\": \"6a85f2bae5f1df846c16f069\",\n                \"name\": \"EventPulse Admin\",\n                \"email\": \"admin@eventpulse.com\",\n                \"role\": \"admin\",\n                \"createdAt\": \"2026-08-19T18:15:22.068Z\",\n                \"updatedAt\": \"2026-08-19T18:15:22.068Z\",\n                \"__v\": 0\n            },\n            \"__v\": 0,\n            \"createdAt\": \"2026-08-19T18:15:22.246Z\",\n            \"updatedAt\": \"2026-08-19T18:15:22.246Z\"\n        },\n        {\n            \"_id\": \"6a85f2bae5f1df846c16f06c\",\n            \"title\": \"Cairo Sports Festival\",\n            \"description\": \"A community sports event featuring several athletic activities.\",\n            \"category\": {\n                \"_id\": \"6a85f2b9e5f1df846c16f066\",\n                \"name\": \"Sports\",\n                \"description\": \"Sports and fitness events\",\n                \"__v\": 0,\n                \"createdAt\": \"2026-08-19T18:15:21.709Z\",\n                \"updatedAt\": \"2026-08-19T18:15:21.709Z\"\n            },\n            \"date\": \"2026-10-20T06:00:00.000Z\",\n            \"city\": \"Cairo\",\n            \"venue\": \"Cairo Stadium\",\n            \"capacity\": 1000,\n            \"organizer\": {\n                \"_id\": \"6a85f2bae5f1df846c16f069\",\n                \"name\": \"EventPulse Admin\",\n                \"email\": \"admin@eventpulse.com\",\n                \"role\": \"admin\",\n                \"createdAt\": \"2026-08-19T18:15:22.068Z\",\n                \"updatedAt\": \"2026-08-19T18:15:22.068Z\",\n                \"__v\": 0\n            },\n            \"__v\": 0,\n            \"createdAt\": \"2026-08-19T18:15:22.246Z\",\n            \"updatedAt\": \"2026-08-19T18:15:22.246Z\"\n        },\n        {\n            \"_id\": \"6a85f2bae5f1df846c16f06d\",\n            \"title\": \"Live Music Night\",\n            \"description\": \"An evening featuring live performances from local musicians.\",\n            \"category\": {\n                \"_id\": \"6a85f2b9e5f1df846c16f067\",\n                \"name\": \"Music\",\n                \"description\": \"Music and entertainment events\",\n                \"__v\": 0,\n                \"createdAt\": \"2026-08-19T18:15:21.709Z\",\n                \"updatedAt\": \"2026-08-19T18:15:21.709Z\"\n            },\n            \"date\": \"2026-11-05T16:00:00.000Z\",\n            \"city\": \"Giza\",\n            \"venue\": \"Giza Cultural Center\",\n            \"capacity\": 300,\n            \"organizer\": {\n                \"_id\": \"6a85f2bae5f1df846c16f069\",\n                \"name\": \"EventPulse Admin\",\n                \"email\": \"admin@eventpulse.com\",\n                \"role\": \"admin\",\n                \"createdAt\": \"2026-08-19T18:15:22.068Z\",\n                \"updatedAt\": \"2026-08-19T18:15:22.068Z\",\n                \"__v\": 0\n            },\n            \"__v\": 0,\n            \"createdAt\": \"2026-08-19T18:15:22.246Z\",\n            \"updatedAt\": \"2026-08-19T18:15:22.246Z\"\n        },\n        {\n            \"_id\": \"6a85f2bae5f1df846c16f06e\",\n            \"title\": \"Web Development Workshop\",\n            \"description\": \"A practical workshop covering modern web development concepts.\",\n            \"category\": {\n                \"_id\": \"6a85f2b9e5f1df846c16f068\",\n                \"name\": \"Education\",\n                \"description\": \"Educational and learning events\",\n                \"__v\": 0,\n                \"createdAt\": \"2026-08-19T18:15:21.709Z\",\n                \"updatedAt\": \"2026-08-19T18:15:21.709Z\"\n            },\n            \"date\": \"2026-11-12T09:00:00.000Z\",\n            \"city\": \"Cairo\",\n            \"venue\": \"Technology Innovation Hub\",\n            \"capacity\": 100,\n            \"organizer\": {\n                \"_id\": \"6a85f2bae5f1df846c16f069\",\n                \"name\": \"EventPulse Admin\",\n                \"email\": \"admin@eventpulse.com\",\n                \"role\": \"admin\",\n                \"createdAt\": \"2026-08-19T18:15:22.068Z\",\n                \"updatedAt\": \"2026-08-19T18:15:22.068Z\",\n                \"__v\": 0\n            },\n            \"__v\": 0,\n            \"createdAt\": \"2026-08-19T18:15:22.246Z\",\n            \"updatedAt\": \"2026-08-19T18:15:22.246Z\"\n        }\n    ],\n    \"pagination\": {\n        \"page\": 1,\n        \"limit\": 10,\n        \"total\": 6,\n        \"totalPages\": 1\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Event",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/api/events/:id",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "events",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "6a8753566a06ed9d070e82ea"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Delete Event",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admin_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:3000/api/events/:id",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "events",
+                    ":id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "6a8753566a06ed9d070e82ea"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "40"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"28-wRdTlJ5aU6ll9KPBiGmQileIzOM\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 20 Aug 2026 19:33:05 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Event deleted successfully\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Registrations",
+      "item": [
+        {
+          "name": "Create Registration",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{attendee_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"eventId\": \"6a85f2bae5f1df846c16f06d\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/registrations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "registrations"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Create Registration",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{attendee_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"eventId\": \"6a85f2bae5f1df846c16f06d\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/api/registrations",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "registrations"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "260"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"104-rnV3KSbQEmpTti6TlPtkochrePI\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 20 Aug 2026 19:34:57 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Registration successful\",\n    \"data\": {\n        \"event\": \"6a85f2bae5f1df846c16f06d\",\n        \"attendee\": \"6a85f2bae5f1df846c16f06a\",\n        \"status\": \"registered\",\n        \"_id\": \"6a8756e19a96a76f197b5751\",\n        \"createdAt\": \"2026-08-20T19:34:57.071Z\",\n        \"updatedAt\": \"2026-08-20T19:34:57.071Z\",\n        \"__v\": 0\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Registration",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{attendee_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/api/registrations/:id",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "registrations",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "6a8756e19a96a76f197b5751"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Delete Registration",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{attendee_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:3000/api/registrations/:id",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "registrations",
+                    ":id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "6a8756e19a96a76f197b5751"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "49"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"31-4mFGT6POIHSv8H9mPZiExS9CIrE\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 20 Aug 2026 19:38:33 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Registration cancelled successfully\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get my Registrations",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{attendee_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/api/registrations/my",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "registrations",
+                "my"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get my Registrations",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{attendee_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:3000/api/registrations/my",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "registrations",
+                    "my"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "2393"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"959-+6yPLWsh2vqze7cOPn2ZWPIsteY\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 20 Aug 2026 19:36:57 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"_id\": \"6a85f2bae5f1df846c16f06f\",\n            \"event\": {\n                \"_id\": \"6a85f2bae5f1df846c16f06b\",\n                \"title\": \"Tech Innovation Summit\",\n                \"description\": \"A conference focused on modern technology and innovation.\",\n                \"category\": \"6a85f2b9e5f1df846c16f065\",\n                \"date\": \"2026-10-15T07:00:00.000Z\",\n                \"city\": \"Cairo\",\n                \"venue\": \"Cairo International Convention Centre\",\n                \"capacity\": 500,\n                \"organizer\": \"6a85f2bae5f1df846c16f069\",\n                \"__v\": 0,\n                \"createdAt\": \"2026-08-19T18:15:22.246Z\",\n                \"updatedAt\": \"2026-08-19T18:15:22.246Z\"\n            },\n            \"attendee\": \"6a85f2bae5f1df846c16f06a\",\n            \"status\": \"registered\",\n            \"createdAt\": \"2026-08-19T18:15:22.337Z\",\n            \"updatedAt\": \"2026-08-19T18:15:22.337Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a85f2bae5f1df846c16f070\",\n            \"event\": {\n                \"_id\": \"6a85f2bae5f1df846c16f06c\",\n                \"title\": \"Cairo Sports Festival\",\n                \"description\": \"A community sports event featuring several athletic activities.\",\n                \"category\": \"6a85f2b9e5f1df846c16f066\",\n                \"date\": \"2026-10-20T06:00:00.000Z\",\n                \"city\": \"Cairo\",\n                \"venue\": \"Cairo Stadium\",\n                \"capacity\": 1000,\n                \"organizer\": \"6a85f2bae5f1df846c16f069\",\n                \"__v\": 0,\n                \"createdAt\": \"2026-08-19T18:15:22.246Z\",\n                \"updatedAt\": \"2026-08-19T18:15:22.246Z\"\n            },\n            \"attendee\": \"6a85f2bae5f1df846c16f06a\",\n            \"status\": \"registered\",\n            \"createdAt\": \"2026-08-19T18:15:22.338Z\",\n            \"updatedAt\": \"2026-08-19T18:15:22.338Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a85f92e0b74b263f3189cca\",\n            \"event\": {\n                \"_id\": \"6a85f6140b74b263f3189cc7\",\n                \"title\": \"Cairo Tech Meetup\",\n                \"description\": \"A meetup for developers and technology enthusiasts in Cairo.\",\n                \"category\": \"6a85f2b9e5f1df846c16f065\",\n                \"date\": \"2026-09-15T18:00:00.000Z\",\n                \"city\": \"Cairo\",\n                \"venue\": \"Cairo International Convention Centre\",\n                \"capacity\": 100,\n                \"organizer\": \"6a85f2bae5f1df846c16f069\",\n                \"createdAt\": \"2026-08-19T18:29:40.095Z\",\n                \"updatedAt\": \"2026-08-19T18:29:40.095Z\",\n                \"__v\": 0\n            },\n            \"attendee\": \"6a85f2bae5f1df846c16f06a\",\n            \"status\": \"registered\",\n            \"createdAt\": \"2026-08-19T18:42:54.653Z\",\n            \"updatedAt\": \"2026-08-19T18:42:54.653Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a8756e19a96a76f197b5751\",\n            \"event\": {\n                \"_id\": \"6a85f2bae5f1df846c16f06d\",\n                \"title\": \"Live Music Night\",\n                \"description\": \"An evening featuring live performances from local musicians.\",\n                \"category\": \"6a85f2b9e5f1df846c16f067\",\n                \"date\": \"2026-11-05T16:00:00.000Z\",\n                \"city\": \"Giza\",\n                \"venue\": \"Giza Cultural Center\",\n                \"capacity\": 300,\n                \"organizer\": \"6a85f2bae5f1df846c16f069\",\n                \"__v\": 0,\n                \"createdAt\": \"2026-08-19T18:15:22.246Z\",\n                \"updatedAt\": \"2026-08-19T18:15:22.246Z\"\n            },\n            \"attendee\": \"6a85f2bae5f1df846c16f06a\",\n            \"status\": \"registered\",\n            \"createdAt\": \"2026-08-20T19:34:57.071Z\",\n            \"updatedAt\": \"2026-08-20T19:34:57.071Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Announcements",
+      "item": [
+        {
+          "name": "Create Announcement",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"eventId\": \"6a85f6140b74b263f3189cc7\",\r\n    \"text\": \"The event will begin at 6 PM!\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/announcements",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "announcements"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Create Announcement",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admin_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"eventId\": \"6a85f6140b74b263f3189cc7\",\r\n    \"text\": \"The event will begin at 6 PM!\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/api/announcements",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "announcements"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "258"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"102-JTA9eoy17BkycXosGQNxdwnbRQ4\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 20 Aug 2026 19:39:20 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"event\": \"6a85f6140b74b263f3189cc7\",\n        \"sender\": \"6a85f2bae5f1df846c16f069\",\n        \"text\": \"The event will begin at 6 PM!\",\n        \"_id\": \"6a8757e89a96a76f197b5752\",\n        \"createdAt\": \"2026-08-20T19:39:20.580Z\",\n        \"updatedAt\": \"2026-08-20T19:39:20.580Z\",\n        \"__v\": 0\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Announcements",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/announcements/:eventId",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "announcements",
+                ":eventId"
+              ],
+              "variable": [
+                {
+                  "key": "eventId",
+                  "value": "6a85f6140b74b263f3189cc7"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get Announcements",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3000/api/announcements/:eventId",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "announcements",
+                    ":eventId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "eventId",
+                      "value": "6a85f6140b74b263f3189cc7"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1220"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"4c4-m+Vc9nZ80UT81l+T+iEph4RQu5U\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 20 Aug 2026 19:39:28 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"6a8607618a32985c80c3623d\",\n            \"event\": \"6a85f6140b74b263f3189cc7\",\n            \"sender\": {\n                \"_id\": \"6a85f2bae5f1df846c16f069\",\n                \"name\": \"EventPulse Admin\",\n                \"email\": \"admin@eventpulse.com\",\n                \"role\": \"admin\",\n                \"createdAt\": \"2026-08-19T18:15:22.068Z\",\n                \"updatedAt\": \"2026-08-19T18:15:22.068Z\",\n                \"__v\": 0\n            },\n            \"text\": \"The event will begin at 6 PM!\",\n            \"createdAt\": \"2026-08-19T19:43:29.806Z\",\n            \"updatedAt\": \"2026-08-19T19:43:29.806Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a8607e18a32985c80c3623e\",\n            \"event\": \"6a85f6140b74b263f3189cc7\",\n            \"sender\": {\n                \"_id\": \"6a85f2bae5f1df846c16f069\",\n                \"name\": \"EventPulse Admin\",\n                \"email\": \"admin@eventpulse.com\",\n                \"role\": \"admin\",\n                \"createdAt\": \"2026-08-19T18:15:22.068Z\",\n                \"updatedAt\": \"2026-08-19T18:15:22.068Z\",\n                \"__v\": 0\n            },\n            \"text\": \"The event will begin at 6 PM!\",\n            \"createdAt\": \"2026-08-19T19:45:37.319Z\",\n            \"updatedAt\": \"2026-08-19T19:45:37.319Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a8757e89a96a76f197b5752\",\n            \"event\": \"6a85f6140b74b263f3189cc7\",\n            \"sender\": {\n                \"_id\": \"6a85f2bae5f1df846c16f069\",\n                \"name\": \"EventPulse Admin\",\n                \"email\": \"admin@eventpulse.com\",\n                \"role\": \"admin\",\n                \"createdAt\": \"2026-08-19T18:15:22.068Z\",\n                \"updatedAt\": \"2026-08-19T18:15:22.068Z\",\n                \"__v\": 0\n            },\n            \"text\": \"The event will begin at 6 PM!\",\n            \"createdAt\": \"2026-08-20T19:39:20.580Z\",\n            \"updatedAt\": \"2026-08-20T19:39:20.580Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "health"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
