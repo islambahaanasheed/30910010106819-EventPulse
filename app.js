@@ -1,6 +1,7 @@
 require("dotenv").config();
 
 const express = require("express");
+const mongoose = require("mongoose");
 const morgan = require("morgan");
 const mongoSanitize = require("@exortek/express-mongo-sanitize");
 
@@ -25,6 +26,26 @@ app.use("/api/announcements", announcementRoutes);
 app.get("/", (req, res) => {
     res.json({
         message: "EventPulse API is running"
+    });
+});
+
+// Health check endpoint
+app.get("/health", (req, res) => {
+    const dbStates = {
+        0: "disconnected",
+        1: "connected",
+        2: "connecting",
+        3: "disconnecting"
+    };
+
+    const dbStatus =
+        dbStates[mongoose.connection.readyState] || "unknown";
+
+    res.status(200).json({
+        status: "ok",
+        environment: process.env.NODE_ENV || "development",
+        uptime: process.uptime(),
+        database: dbStatus
     });
 });
 
