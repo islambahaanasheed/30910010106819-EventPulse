@@ -1,8 +1,6 @@
-const dns = require("dns");
 const mongoose = require("mongoose");
-require("dotenv").config();
 
-dns.setServers(["192.168.1.1"]);
+require("dotenv").config();
 
 const connectDB = async () => {
     try {
